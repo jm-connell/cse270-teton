@@ -32,7 +32,7 @@ class TestSmokeTest():
   
   def test_joinPageTest(self):
     self.driver.set_window_size(1200, 800)
-    self.driver.get("http://localhost:5500//teton/1.6/join.html")
+    self.driver.get("http://localhost:5500/teton/1.6/join.html")
     elements = self.driver.find_elements(By.NAME, "fname")
     assert len(elements) > 0
     self.driver.find_element(By.NAME, "fname").click()
